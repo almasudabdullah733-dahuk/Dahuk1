@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report an Incident | Dahuk</title>
+    <meta
+      name="description"
+      content="If you or someone you know is experiencing cyberbullying, report it here. Every report is treated with care and confidentiality."
+    />
+    <link rel="icon" href="assets/images/logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="skip-link" href="#main">Skip to content</a>
+      <div class="nav-wrap">
+        <a href="index.html" class="brand"
+          ><img src="assets/images/logo.png" alt="Dahuk logo"
+        /></a>
+        <nav class="nav-links" id="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="awareness.html">Awareness</a>
+          <a href="resources.html">Resources</a>
+          <a href="faq.html">FAQ</a>
+          <div class="nav-cta">
+            <a href="report.html" class="btn btn-teal btn-sm active-cta"
+              >Report &amp; Get Help</a
+            >
+          </div>
+        </nav>
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-inner">
+          <span class="eyebrow">Confidential &amp; Safe</span>
+          <h1>Report an Incident</h1>
+          <p class="lead">
+            If you or someone you know is experiencing cyberbullying, you can
+            report it here. Every report is treated with care and
+            confidentiality.
+          </p>
+        </div>
+        <div class="wave-divider">
+          <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+            <path
+              d="M0,40 C240,90 480,0 720,30 C960,60 1200,90 1440,40 L1440,100 L0,100 Z"
+              fill="var(--cream)"
+            />
+          </svg>
+        </div>
+      </section>
+
+      <section class="section section-cream">
+        <div class="section-head left reveal">
+          <h2 style="font-size: 1.6rem">Before You Report</h2>
+          <p>
+            Taking a moment to prepare will help us respond more effectively.
+            Here's what to do first:
+          </p>
+        </div>
+        <div class="prep-grid reveal">
+          <div class="prep-card">
+            <div class="icon-circle">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+              >
+                <path d="m5 13 4 4L19 7" />
+              </svg>
+            </div>
+            <h3>Document the evidence</h3>
+            <p>
+              Take screenshots of all harassing messages, posts, or content.
+              Note the platform, date, and time of each incident.
+            </p>
+          </div>
+          <div class="prep-card">
+            <div class="icon-circle">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+              >
+                <path d="m5 13 4 4L19 7" />
+              </svg>
+            </div>
+            <h3>Do not delete anything yet</h3>
+            <p>
+              Even if the content is distressing, preserve it as evidence before
+              blocking or reporting on the platform.
+            </p>
+          </div>
+          <div class="prep-card muted">
+            <div class="icon-circle">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+              >
+                <path d="m5 13 4 4L19 7" />
+              </svg>
+            </div>
+            <h3>You are safe here</h3>
+            <p>
+              Everything you share in this form is confidential. We will never
+              share your identity without your explicit consent.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-mint">
+        <div class="section-head reveal">
+          <h2>Submit Your Report</h2>
+          <p>
+            Fill in as much detail as you can. You can remain anonymous if you
+            prefer — only an email is required so we can follow up with you.
+          </p>
+        </div>
+
+        <form class="form-card reveal" id="report-form" novalidate>
+          <div class="form-status" role="status" aria-live="polite"></div>
+
+          <p class="form-section-label">About You (Reporter)</p>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="r-name">Your Name</label>
+              <input
+                type="text"
+                id="r-name"
+                name="reporter_name"
+                placeholder="Optional — leave blank to stay anonymous"
+              />
+            </div>
+            <div class="form-group">
+              <label for="r-email"
+                >Your Email Address <span class="req">*</span></label
+              >
+              <input
+                type="email"
+                id="r-email"
+                name="reporter_email"
+                placeholder="Required so we can follow up with you"
+                required
+              />
+              <span class="field-error"
+                >Please enter a valid email address.</span
+              >
+            </div>
+          </div>
+
+          <hr class="divider-line" />
+
+          <p class="form-section-label">About the Incident</p>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="r-platform"
+                >Where did this happen? <span class="req">*</span></label
+              >
+              <select id="r-platform" name="platform" required>
+                <option value="">Select a platform...</option>
+                <option>Facebook</option>
+                <option>Instagram</option>
+                <option>TikTok</option>
+                <option>WhatsApp</option>
+                <option>Messenger</option>
+                <option>Online games</option>
+                <option>SMS / Phone</option>
+                <option>Other</option>
+              </select>
+              <span class="field-error"
+                >Please select where this happened.</span
+              >
+            </div>
+            <div class="form-group">
+              <label for="r-type"
+                >Type of cyberbullying <span class="req">*</span></label
+              >
+              <select id="r-type" name="type" required>
+                <option value="">Select a type...</option>
+                <option>Harassment</option>
+                <option>Cyberstalking</option>
+                <option>Doxing</option>
+                <option>Impersonation</option>
+                <option>Non-consensual sharing</option>
+                <option>Exclusion / ostracism</option>
+                <option>Not sure</option>
+              </select>
+              <span class="field-error">Please select a type.</span>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="r-age"
+                >Age of the person being bullied
+                <span class="req">*</span></label
+              >
+              <select id="r-age" name="age_range" required>
+                <option value="">Select an age range...</option>
+                <option>Under 13</option>
+                <option>13–17</option>
+                <option>18–25</option>
+                <option>Over 25</option>
+              </select>
+              <span class="field-error">Please select an age range.</span>
+            </div>
+            <div class="form-group">
+              <label for="r-ongoing"
+                >Is this still ongoing? <span class="req">*</span></label
+              >
+              <select id="r-ongoing" name="ongoing" required>
+                <option value="">Select...</option>
+                <option>Yes, it's still happening</option>
+                <option>It happened once</option>
+                <option>It has stopped</option>
+                <option>Not sure</option>
+              </select>
+              <span class="field-error"
+                >Please let us know if this is ongoing.</span
+              >
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 8px">
+            <label for="r-description"
+              >Add Evidence <span class="req">*</span></label
+            >
+            <input type="file" name="" id="" />
+            <span class="field-error">Please describe what happened.</span>
+          </div>
+          <div class="form-group" style="margin-bottom: 8px">
+            <label for="r-description"
+              >Describe what happened <span class="req">*</span></label
+            >
+            <textarea
+              id="r-description"
+              name="description"
+              placeholder="Please describe the incident in as much detail as you are comfortable sharing. Include usernames, links, or any other relevant information."
+              required
+            ></textarea>
+            <span class="field-error">Please describe what happened.</span>
+          </div>
+
+          <div class="form-footer">
+            <p class="form-note">
+              Your report is confidential. We will never share your identity
+              without your consent.
+            </p>
+            <button type="submit" class="btn btn-teal">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+              >
+                <path d="M12 2 3 5v6c0 5 4 9 9 11 5-2 9-6 9-11V5l-9-3Z" />
+              </svg>
+              Submit Report
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="section section-cream">
+        <div class="section-head reveal">
+          <h2>What Happens Next?</h2>
+        </div>
+        <div class="step-columns reveal">
+          <div class="prep-card" style="text-align: left">
+            <div class="step-num teal" style="margin-bottom: 14px">01</div>
+            <h3>We review your report</h3>
+            <p>
+              Our team reads every report carefully and assesses the situation
+              based on the details you provide.
+            </p>
+          </div>
+          <div class="prep-card" style="text-align: left">
+            <div class="step-num navy" style="margin-bottom: 14px">02</div>
+            <h3>We follow up with you</h3>
+            <p>
+              If you provided an email, we will reach out within 48 hours with
+              guidance, resources, or next steps.
+            </p>
+          </div>
+          <div class="prep-card" style="text-align: left">
+            <div class="step-num teal" style="margin-bottom: 14px">03</div>
+            <h3>We connect you with help</h3>
+            <p>
+              Depending on the severity, we may refer you to legal aid, mental
+              health support, or law enforcement contacts.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-banner reveal">
+        <h2>Also Report Directly to Platforms &amp; Authorities</h2>
+        <p>
+          Reporting to us is a great first step — but you can also report
+          directly to the platform where the harassment occurred, and to
+          Bangladesh's official cybercrime authorities.
+        </p>
+        <div class="link-pill-row">
+          <a
+            href="https://btrc.gov.bd"
+            target="_blank"
+            rel="noopener"
+            class="link-pill"
+            >Report to BTRC
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.6"
+            >
+              <path
+                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+              />
+              <path d="M15 3h6v6" />
+              <path d="M10 14 21 3" />
+            </svg>
+          </a>
+          <a
+            href="https://cid.gov.bd"
+            target="_blank"
+            rel="noopener"
+            class="link-pill"
+            >Report to Bangladesh Police Cyber Crime Unit
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.6"
+            >
+              <path
+                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+              />
+              <path d="M15 3h6v6" />
+              <path d="M10 14 21 3" />
+            </svg>
+          </a>
+          <a
+            href="https://www.facebook.com/help"
+            target="_blank"
+            rel="noopener"
+            class="link-pill"
+            >Facebook Help Center
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.6"
+            >
+              <path
+                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+              />
+              <path d="M15 3h6v6" />
+              <path d="M10 14 21 3" />
+            </svg>
+          </a>
+          <a
+            href="https://help.instagram.com"
+            target="_blank"
+            rel="noopener"
+            class="link-pill"
+            >Instagram Safety Center
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.6"
+            >
+              <path
+                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+              />
+              <path d="M15 3h6v6" />
+              <path d="M10 14 21 3" />
+            </svg>
+          </a>
+        </div>
+        <p style="margin-top: 26px">
+          <a
+            href="resources.html"
+            class="read-more"
+            style="color: #fff; justify-content: center; display: inline-flex"
+            >View all support resources
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.6"
+              stroke-linecap="round"
+            >
+              <path d="M9 6l6 6-6 6" />
+            </svg>
+          </a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#17a398"
+              stroke-width="1.8"
+            >
+              <path d="M12 2 3 5v6c0 5 4 9 9 11 5-2 9-6 9-11V5l-9-3Z" />
+              <path d="M9 12a3 3 0 1 0 3-3" />
+            </svg>
+            Dahuk
+          </div>
+          <p>
+            A digital platform dedicated to raising awareness about
+            cyberbullying and online harassment among young people in
+            Bangladesh.
+          </p>
+          <p class="footer-tag">You are not alone. We stand with you.</p>
+        </div>
+        <div class="footer-col">
+          <h4>PLATFORM</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Dahuk</a>
+          <a href="awareness.html">Awareness &amp; Education</a>
+        </div>
+        <div class="footer-col">
+          <h4>SUPPORT</h4>
+          <a href="resources.html">Resources</a>
+          <a href="report.html">Report an Incident</a>
+          <a href="resources.html#help">Get Help</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Dahuk. All rights reserved. dahuk.online</span>
+        <span>Made with ♥ for a safer Bangladesh</span>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

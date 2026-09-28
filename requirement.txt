@@ -1,0 +1,11 @@
+1. Home page: Cards needs to taken down below th ehero border.
+2. Set the picture of the major three services.
+3. In hero area the title & description would be bold or animated for more vibility.
+4. About page: Set the three profile picture from asset>person images.
+5. Awareness Page: Set a picture in allocated card.
+6. Resources page: Need Immediate Help section would be centre of the page. Also the Organization and Help youslef same way.
+7. Report & Get Help: Add  "Share an Evidence" option before description.
+8. At the end of the report page add icon of facebook, instagram or other social media platforms. 
+Questions: Multiple Device testing?
+Backlinks of every pages?
+Database after report?
